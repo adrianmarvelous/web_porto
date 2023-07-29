@@ -38,6 +38,10 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
+.nav-text{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .btn.about-me:hover {
     color: white;;
 /* Optionally, you can add hover effects */
@@ -108,10 +112,10 @@ height: 100%;
 }
 
 .layer-1 {
-z-index: 1; /* Layer 1 is below Layer 2 */
+z-index: 0; /* Layer 1 is below Layer 2 */
 }
 .layer-2 {
-z-index: 2; /* Layer 1 is below Layer 2 */
+z-index: 0; /* Layer 1 is below Layer 2 */
 }
 .glass-container {
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
@@ -125,4 +129,218 @@ z-index: 2; /* Layer 1 is below Layer 2 */
     height: 100vh;
   }
   
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    padding: 0;
+  }
+/*   
+  body {
+    height: 100%;
+    overflow: hidden;
+  } */
+  .buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: -1;
+  }
   
+  .buttons button {
+    border: none;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  #top {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+  }
+  
+  #bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+  
+  #left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  
+  #right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  .top-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    background: #6c567b;
+    transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+  }
+  
+  .top-layer.active {
+    top: 100%;
+  }
+  
+  .top-layer--2 {
+    background: #393e46;
+    transition-delay: 0.6s;
+  }
+  
+  .top-layer--3 {
+    background: #6c5b7b;
+    transition-delay: 0.4s;
+  }
+  
+  .top-layer--4 {
+    background: #c06c84;
+    transition-delay: 0.2s;
+  }
+  
+  .top-layer--5 {
+    background: #f67280;
+    transition-delay: 0.1s;
+  }
+  
+  .bottom-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    background: #48466d;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .bottom-layer.active {
+    top: -100%;
+  }
+  
+  .bottom-layer--2 {
+    background: #ecf3a3;
+    transition-delay: 0.12s;
+  }
+  
+  .bottom-layer--3 {
+    background: #95a792;
+    transition-delay: 0.4s;
+  }
+  
+  .left-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: -100%;
+    bottom: auto;
+    right: auto;
+    background: #4d606e;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .left-layer.active {
+    left: 100%;
+  }
+  
+  .left-layer--2 {
+    background: #d3d4d8;
+    transition-delay: 0.3s;
+  }
+  
+  .left-layer--3 {
+    background: #d3d4d8;
+    transition-delay: 0.12s;
+  }
+  
+  .left-layer--4 {
+    background: #c06c84;
+    transition-delay: 0.08s;
+  }
+  
+  .right-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: 100%;
+    bottom: auto;
+    right: auto;
+    background: #7f4a88;
+    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .right-layer.active {
+    left: -100%;
+  }
+  
+  .right-layer--2 {
+    background: #c79ecf;
+    transition-delay: 0.3s;
+  }
+  
+  .right-layer--3 {
+    background: #fe9191;
+    transition-delay: 0.2s;
+  }
+  /* Set initial opacity to 0 */
+.fading-div {
+  opacity: 0;
+  /* Optionally, you can set a specific height and width for the div */
+  /* height: 100px;
+  width: 200px; */
+  /* Other styles for positioning, colors, etc. */
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the div */
+.fading-div {
+  /* Set the animation properties */
+  animation-delay: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out; /* Use a different easing function if desired */
+  /* Optionally, you can add animation-delay to control when the animation starts */
+  /* animation-delay: 0.5s; */
+  animation-fill-mode: forwards; /* Keeps the final state after the animation ends */
+}
+
+.about-p{
+  padding: 20px;
+  width: 600px;
+  color: white;
+  text-align: justify;
+  font-family: 'Josefin Sans', sans-serif;
+}
