@@ -15,4 +15,4 @@ function hideDiv() {
 }
 
 // Call the hideDiv function after 1 second (1000 milliseconds)
-setTimeout(hideDiv, 2500);
+setTimeout(hideDiv, 1800);
