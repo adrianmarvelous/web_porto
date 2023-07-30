@@ -9,14 +9,14 @@ li {
     text-decoration: none;
 }
 .nama{
-    color: #3DA1C8;
+    color: #A0DDDE;
     text-align: center;
     margin-top: 10vh;
     font-size: 72px;
     font-family: 'Josefin Sans', sans-serif;
 }
 .position{
-    color: #3DA1C8;
+    color: #A0DDDE;
     margin-top: -30px;
     text-align: center;
     font-size: 32px;
@@ -45,7 +45,7 @@ transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 .btn.about-me:hover {
   color: #14122A;
 /* Optionally, you can add hover effects */
-background: linear-gradient(45deg, #FCEFD4, #FEDFC9);
+background: linear-gradient(45deg, #FCEFD4, #3DA1C8);
 transform: scale(1.1);
 }
   
@@ -312,12 +312,12 @@ z-index: 0; /* Layer 1 is below Layer 2 */
 }
 
 .about-p{
-  color: white;
+  color: var(--color);
   text-align: justify;
   font-family: 'Josefin Sans', sans-serif;
 }
 .about-title{
-  color: white;
+  color: var(--color);
   text-align: center;
   font-size: 72px;
   font-family: 'Josefin Sans', sans-serif;
@@ -334,11 +334,12 @@ z-index: 0; /* Layer 1 is below Layer 2 */
 }
 .bio{
   text-align: right;
-  color: white;
+  color: var(--color);
   margin: 20px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .vl {
-  color: white;
+  color: var(--color);
   border-left: 6px solid;
   height: 40vh;
 }
@@ -353,7 +354,6 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   }
   .about-kiri{
     padding: 5px;
-    border: 1px solid;
   }
 }
 .vl{

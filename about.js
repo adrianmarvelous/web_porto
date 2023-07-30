@@ -1,4 +1,4 @@
-var layers = document.querySelectorAll(".top-layer");
+var layers = document.querySelectorAll(".bottom-layer");
 for (const layer of layers) {
   //layer.classList.add("active");
 setTimeout(() => {
