@@ -389,3 +389,42 @@ z-index: 0; /* Layer 1 is below Layer 2 */
 .vl{
   height: 25vh;
 }
+
+.container-resume{
+  display: flex;
+  margin-top: 100px;
+}
+.card-resume{
+  background-color: white;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: .2s;
+}
+.card-resume:hover{
+  transform: translateY(-1rem);
+}
+.card-resume:hover~.card-resume{
+  transform: translateX(130px);
+}
+.card-resume:not(:first-child){
+  margin-left: -130px;
+}
+.image-bg{
+  width: 100%;
+  border-radius: 20px;
+}
+.header{
+  color: white;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.desk{
+  color: white;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+}
