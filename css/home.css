@@ -338,9 +338,46 @@ z-index: 0; /* Layer 1 is below Layer 2 */
 }
 
 .about-p{
-  padding: 20px;
-  width: 600px;
   color: white;
   text-align: justify;
   font-family: 'Josefin Sans', sans-serif;
+}
+.about-title{
+  color: white;
+  text-align: center;
+  font-size: 72px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container-about{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid;
+}
+.bio{
+  text-align: right;
+  color: white;
+}
+.vl {
+  color: white;
+  border-left: 6px solid;
+  height: 40vh;
+}
+.about-kiri{
+  /* width: 100%; */
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid;
+}
+.about-kanan{
+  width: 70%;
+  padding: 50px;
+  border: 1px solid;
+}
+@media screen and (max-width: 600px) {
+  .about-kanan {
+    width: 100%;
+    padding: 0px;
+  }
 }
