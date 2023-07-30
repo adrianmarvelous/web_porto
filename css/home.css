@@ -352,13 +352,11 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px solid;
 }
 .about-kiri{
   /* width: 100%; */
   padding: 50px;
   display: flex;
-  border: 1px solid;
 }
 .bio{
   text-align: right;
@@ -373,11 +371,14 @@ z-index: 0; /* Layer 1 is below Layer 2 */
 .about-kanan{
   width: 60%;
   padding: 50px;
-  border: 1px solid;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .about-kanan {
     width: 100%;
     padding: 0px;
+  }
+  .about-kiri{
+    padding: 5px;
+    border: 1px solid;
   }
 }
