@@ -400,7 +400,7 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   height: 400px;
   padding: 20px;
   border-radius: 20px;
-  background: #17141d;
+  background: #003631;
   box-shadow: -1rem 0 3rem #000;
 
   transition: .2s;
@@ -419,12 +419,27 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   border-radius: 20px;
 }
 .header{
+  font-size: 42px;
+  color: #7DBF5E;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.desk-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+}
+.desk{
+  font-size: 14px;
   color: white;
   text-align: left;
   font-family: 'Josefin Sans', sans-serif;
 }
-.desk{
-  color: white;
-  text-align: left;
-  font-family: 'Josefin Sans', sans-serif;
+.icon-resume{
+  width: 50px;
+}
+.icon-container{
+  display: flex;
+  justify-content: flex-start;
 }
