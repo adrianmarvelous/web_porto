@@ -354,24 +354,24 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   width: 100%;
   border: 1px solid;
 }
+.about-kiri{
+  /* width: 100%; */
+  padding: 50px;
+  display: flex;
+  border: 1px solid;
+}
 .bio{
   text-align: right;
   color: white;
+  margin: 20px;
 }
 .vl {
   color: white;
   border-left: 6px solid;
   height: 40vh;
 }
-.about-kiri{
-  /* width: 100%; */
-  padding: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid;
-}
 .about-kanan{
-  width: 70%;
+  width: 60%;
   padding: 50px;
   border: 1px solid;
 }
