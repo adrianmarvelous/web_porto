@@ -382,3 +382,6 @@ z-index: 0; /* Layer 1 is below Layer 2 */
     border: 1px solid;
   }
 }
+.vl{
+  height: 25vh;
+}
