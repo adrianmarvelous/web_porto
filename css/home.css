@@ -74,7 +74,7 @@ position: absolute; /* Position the elements absolutely within the container */
 top: 0;
 left: 0;
 width: 100%;
-height: 100vh;
+height: 140vh;
 background-color: var(--color);
 }
 .layer-2 {
@@ -100,7 +100,7 @@ z-index: 0; /* Layer 1 is below Layer 2 */
     padding: 20px;
     font-size: 18px;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
   }
   
   *,
@@ -216,12 +216,12 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   
   .bottom-layer--2 {
     background: var(--color);
-    transition-delay: 0.12s;
+    transition-delay: 0.43s;
   }
   
   .bottom-layer--3 {
     background: var(--color);
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
   }
   
   .bottom-layer--4 {
@@ -237,33 +237,37 @@ z-index: 0; /* Layer 1 is below Layer 2 */
     position: absolute;
     width: 100%;
     height: 100%;
-    top: auto;
+    top: 0%;
     left: -100%;
     bottom: auto;
     right: auto;
-    background: #4d606e;
+    background: var(--color);
     transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   
   .left-layer.active {
     left: 100%;
   }
-  
+ 
   .left-layer--2 {
-    background: #d3d4d8;
-    transition-delay: 0.3s;
+    background: var(--color);
+    transition-delay: 0.43s;
   }
   
   .left-layer--3 {
-    background: #d3d4d8;
-    transition-delay: 0.12s;
+    background: var(--color);
+    transition-delay: 0.3s;
   }
   
   .left-layer--4 {
-    background: #c06c84;
-    transition-delay: 0.08s;
+    background: var(--color);
+    transition-delay: 0.2s;
   }
   
+  .left-layer--5 {
+    background: var(--color);
+    transition-delay: 0.1s;
+  }
   .right-layer {
     position: absolute;
     width: 100%;
@@ -336,11 +340,6 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   flex-wrap: wrap;
   width: 100%;
 }
-.about-kiri{
-  /* width: 100%; */
-  padding: 50px;
-  display: flex;
-}
 .bio{
   text-align: right;
   color: var(--color);
@@ -351,6 +350,10 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   color: var(--color);
   border-left: 6px solid;
   height: 40vh;
+}
+.about-kiri{
+  padding: 50px;
+  display: flex;
 }
 .about-kanan{
   width: 60%;
@@ -366,7 +369,7 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   left: -100%; /* Initially position the pseudo-element outside the div */
   width: 100%;
   height: 100%;
-  background-color: #59022B; /* New background color on hover */
+  background-color: #3A0000; /* New background color on hover */
   transition: left 0.3s; /* Transition the left property */
 }
 
