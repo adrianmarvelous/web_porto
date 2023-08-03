@@ -272,11 +272,11 @@ z-index: 0; /* Layer 1 is below Layer 2 */
     position: absolute;
     width: 100%;
     height: 100%;
-    top: auto;
+    top: 0%;
     left: 100%;
     bottom: auto;
     right: auto;
-    background: #7f4a88;
+    background: var(--color);
     transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   
@@ -285,13 +285,22 @@ z-index: 0; /* Layer 1 is below Layer 2 */
   }
   
   .right-layer--2 {
-    background: #c79ecf;
+    background: var(--color);
     transition-delay: 0.3s;
   }
   
   .right-layer--3 {
-    background: #fe9191;
+    background: var(--color);
     transition-delay: 0.2s;
+  }
+  .right-layer--4 {
+    background: var(--color);
+    transition-delay: 0.2s;
+  }
+  
+  .right-layer--5 {
+    background: var(--color);
+    transition-delay: 0.1s;
   }
   /* Set initial opacity to 0 */
 .fading-div {
@@ -442,4 +451,51 @@ z-index: 0; /* Layer 1 is below Layer 2 */
 .icon-container{
   display: flex;
   justify-content: flex-start;
+}
+.container_porto{
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card_porto{
+  margin: 100px;
+  position: relative;
+  isolation: isolate;
+  width: 1200px;
+  height: 540px;
+  background-color: #000;
+  border-radius: 8px;
+}
+.card_image{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 20%;
+  border-radius: inherit;
+  transition: transform 250ms;
+}
+.card_porto:hover .card_image{
+  transform: translateY(-112px) scale(0.75);
+}
+.card_body{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 24px;
+  color: #f4c644;
+}
+.card_category{
+  color: #fff;
+}
+.card_button{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #f4c644;
+  color: #000;
 }
