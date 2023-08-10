@@ -416,6 +416,7 @@ z-index: 2; /* Layer 1 is below Layer 2 */
 .card-resume:not(:first-child){
   margin-left: -130px;
 }
+
 .image-bg{
   width: 100%;
   border-radius: 20px;
@@ -538,8 +539,49 @@ z-index: 2; /* Layer 1 is below Layer 2 */
 }
 
 
-
 @media screen and (max-width: 1200px) {
+  .container-resume{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .card-resume{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #003631;
+    box-shadow: -1rem 0 3rem #000;
+  
+    transition: .2s;
+  }
+  .card-resume:hover{
+    transform: translateY(-1rem);
+  }
+  .card-resume:hover~.card-resume{
+    transform: translateY(170px);
+  }
+  .card-resume:not(:first-child){
+    margin-left: 0;
+    margin-top: -200px;
+  }
+  .card-bio{
+    width: 300px;
+    height: 300px;
+  }
+  .vl{
+    display: none;
+  }
+  .about-kiri{
+    width: 100%;
+  }
+  .bio{
+    width: 100%;
+    text-align: center;
+  }
   .about-kanan {
     width: 100%;
     padding: 0px;
