@@ -467,6 +467,9 @@ z-index: 2; /* Layer 1 is below Layer 2 */
   background-color: #000;
   border-radius: 8px;
 }
+.card_author{
+  text-align: left;
+}
 .card_image{
   display: block;
   width: 100%;
