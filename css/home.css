@@ -441,9 +441,9 @@ z-index: 2; /* Layer 1 is below Layer 2 */
 }
 .icon-resume{
   width: 50px;
+  margin: 5px;
 }
 .icon-container{
-  position: relative;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
